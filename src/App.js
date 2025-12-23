@@ -3,6 +3,8 @@ import Layout from "./layout/Layout"
 import MainPage from "./pages/MainPage"
 import CartPage from "./pages/CartPage"
 import CategoryPage from "./pages/CategoryPage"
+import "./assets/scss/global.scss";
+
 import { useState } from "react";
 const App = () => {
   const [cartItems, setCartItems] = useState([
