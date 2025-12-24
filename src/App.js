@@ -4,6 +4,7 @@ import Layout from "./layout/Layout"
 import MainPage from "./pages/MainPage"
 import CartPage from "./pages/CartPage"
 import CategoryPage from "./pages/CategoryPage"
+import DetailPage from "./pages/DetailPage"
 import "./assets/scss/global.scss";
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/" element={<MainPage />}/>
         <Route path="/cart" element={<CartPage />} />
         <Route path="/category/:type" element={<CategoryPage />} />
+        <Route path="/detail" element={<DetailPage />} />
       </Routes>
     </BrowserRouter>
   )
