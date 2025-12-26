@@ -39,7 +39,7 @@ const DetailPick = () => {
   return (
     <section className="detail-pick">
       <div className="inner">
-        <h2 className="title">MD'S PICK</h2>
+        <h2 className="title">PACEY PICK</h2>
         <ul className="pick-list">
             {pickItems.map((item) => (
                 <li key={item.id} className="pick-item">
