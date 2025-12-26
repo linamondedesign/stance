@@ -14,6 +14,7 @@
       "shoes01-5.jpg"
     ]
   },
+  
   {
     "id": "2",
     "image": "shoes02-1.jpg",
@@ -267,6 +268,18 @@
       "shoes18-3.jpg",
       "shoes18-4.jpg",
       "shoes18-5.jpg"
+    ]
+  },
+    {
+    "id": "19",
+    "image": "shoes01-1.jpg",
+    "title": "PACEY",
+    "sub1": "에어 라이트 러너",
+    "price1": "129000",
+    "price2": "109000",
+    "category": "best",
+    "detailimage": [
+      "shoes01-6.jpg"
     ]
   }
 ]
