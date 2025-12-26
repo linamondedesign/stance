@@ -5,6 +5,7 @@
   padding: 5rem 3rem;
   h2 {
     font-size: 2rem;
+    padding-bottom: 14px;
   }
   ul {
     @include flex-layout($gap: 0);
@@ -52,6 +53,10 @@
             word-break: break-word;
           }
         }
+      }
+      &:hover p {
+        transition: 0.3s;
+        color: var(--Text-200);
       }
     }
   }

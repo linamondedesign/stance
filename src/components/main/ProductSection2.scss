@@ -85,6 +85,14 @@
           }
         }
       }
+      &:hover .best-txt {
+        transition: 0.5s;
+        background-color: var(--Primary-100);
+      }
+      &:hover p.sub1 {
+        transition: 0.5s;
+        font-weight: bolder;
+      }
     }
   }
   .indi-bottom {

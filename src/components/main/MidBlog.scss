@@ -24,7 +24,12 @@
           padding-bottom: 1.75rem;
         }
         p {
+          transition: 0.3s;
           font-weight: 400;
+          cursor: pointer;
+          &:hover {
+            color: var(--Primary-200);
+          }
         }
       }
     }
