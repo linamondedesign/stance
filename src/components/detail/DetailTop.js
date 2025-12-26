@@ -242,8 +242,6 @@ const DetailTop = () => {
   const [selectedSize, setSelectedSize] = useState(null);
 
   if (!product) return <div className="loading">Loading...</div>;
-
-  const imgPath = `../../assets/images/Shoes/`; 
   
   // 사이즈 옵션 배열 (시안 참고)
   const sizes = [225, 230, 235, 240, 245, 250, 255, 260, 265, 270, 275, 280];
@@ -255,21 +253,18 @@ const DetailTop = () => {
         {/* 왼쪽: 이미지 영역 */}
         <div className="img-area">
           <div className="main-img-container">
-            {/* <img src={require(`${imgPath}/${mainImg}`)} alt={product.title} className="main-img" /> */}
-            <img src={require(`../../assets/images/Shoes/shoes11-1.jpg`)} alt={product.title} className="main-img" />
+            <img src={require(`../../assets/images/Shoes/${mainImg}`)} alt={product.title} className="main-img" />
           </div>
           <div className="sub-imgs">
              <div className={`thumb ${mainImg === product.image ? 'active' : ''}`} 
                   onClick={() => setMainImg(product.image)}>
-                <img src={require(`${imgPath}${product.image}`)} alt="main thumb" />
-                {/* <img src={require(`../../assets/images/Shoes/shoes11-1.jpg`)} alt="main thumb" /> */}
+                <img src={require(`../../assets/images/Shoes/${product.image}`)} alt="main thumb" />
              </div>
             {product.detailimage.slice(0, 4).map((img, idx) => (
               <div key={idx} 
                    className={`thumb ${mainImg === img ? 'active' : ''}`} 
                    onClick={() => setMainImg(img)}>
-                {/* <img src={require(`${imgPath}/${img}`)} alt={`detail-${idx}`} /> */}
-                <img src={require(`../../assets/images/Shoes/shoes11-1.jpg`)} alt={`detail-${idx}`} />
+                <img src={require(`../../assets/images/Shoes/${img}`)} alt={`detail-${idx}`} />
               </div>
             ))}
           </div>

@@ -35,7 +35,6 @@ import './DetailPick.scss';
 
 const DetailPick = () => {
   const pickItems = ItemData.filter(item => item.category === 'pick').slice(0, 4);
-  const imgPath = "/assets/images/Shoes";
 
   return (
     <section className="detail-pick">
@@ -45,7 +44,8 @@ const DetailPick = () => {
             {pickItems.map((item) => (
                 <li key={item.id} className="pick-item">
                     <div className="thumb">
-                        <img src={`${imgPath}/${item.image}`} alt={item.title} />
+                      <img src={require(`../../assets/images/Shoes/${item.image}`)} alt={item.title} />
+                        {/* <img src={`${imgPath}/${item.image}`} alt={item.title} /> */}
                     </div>
                     <div className="text-box">
                         <p className="sub-title">{item.sub1}</p>

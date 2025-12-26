@@ -28,9 +28,7 @@ import KeywordData from '../../assets/data/Keyword.json'; // 스크린샷 구조
 import './DetailKeyword.scss';
 
 const DetailKeyword = () => {
-  // 스크린샷에 소문자 keyword 폴더가 보임
-  const imgPath = "/assets/images/keyword";
-
+    console.log( 'keyword page');
   return (
     <section className="detail-keyword">
         <div className="inner">
@@ -38,7 +36,8 @@ const DetailKeyword = () => {
             <div className="keyword-grid">
                 {KeywordData.map((item) => (
                     <div key={item.id} className="keyword-item">
-                        <img src={`${imgPath}/${item.image}`} alt={item.title} />
+                        <img src={require(`../../assets/images/keyword/${item.image}`)} alt={item.title} />
+                        {/* <img src={`${imgPath}/${item.image}`} alt={item.title} /> */}
                         <div className="overlay">
                             <span>#{item.title}</span>
                         </div>
